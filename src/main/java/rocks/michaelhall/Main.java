@@ -1,11 +1,11 @@
 package rocks.michaelhall;
 
-import java.io.IOException;
-import java.util.Map;
 import com.google.common.collect.MapDifference.ValueDifference;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.IOException;
+import java.util.Map;
 
 public class Main {
     protected static final Logger logger = LogManager.getLogger();
