@@ -40,6 +40,8 @@ public class Main {
                     Map<String,String> filesOnlyInNewCache = fh.compareLocalCacheToUpdatedCacheOnRight(currentCacheFile, syncFiles);
                     logger.info("Files created since last sync: {}", filesOnlyInNewCache.size());
                 }
+                // Now we need to check S3 for files and a config
+
             } else {
                 logger.debug("Cache does not exist, will initialize it!");
                 fh.saveLocalCacheFile(syncCacheFile, syncFiles);
